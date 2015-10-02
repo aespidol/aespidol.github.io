@@ -4,8 +4,18 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
  * {
-  outline: 1px red dot
+  outline: 1px red dotted
  }
+
+#index-banner {
+  background: url("http://41.media.tumblr.com/69af9a5112c0adab56ce0c2fb48a15aa/tumblr_nvbw9a0oAb1slhhf0o1_1280.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 338px;
+}
+
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
@@ -1665,6 +1675,11 @@ html {
 body {
   margin: 0; }
 
+main {
+  display: block;
+  padding-left: 135px;
+}
+
 /* HTML5 display definitions
    ========================================================================== */
 /**
@@ -1673,7 +1688,7 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
 /**
