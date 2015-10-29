@@ -1,19 +1,11 @@
 @media (max-width:775px){
 	.overlay {
-		height: 100%;
-		width: 33.33%;
-		background-color: #1A1818;
-		opacity: 0.8;
 		margin: auto;
-	}
-	.main{
-		color: white;
 		font-size: 36px;
-		padding-top: 25px;
 	}
 }
 * {
-	outline: 1px red dotted !important;
+	/*outline: 1px red dotted !important;*/
 	margin: 0;
 }
 body {
@@ -24,9 +16,31 @@ body {
 	text-align: center;
 	font-family: "Noto Sans", sans-serif;
 }
-.main{
-	color: white;
+h1 {
 	font-size: 44px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	margin-bottom: 15px;
+}
+p {
+	font-size: 20px;
+	padding: 10px;
+}
+/*colors*/
+.white {
+	color: white;
+}
+.wet-asphalt {
+	color: #2C3E50;
+}
+.wet-asphalt-background {
+	background-color: #2C3E50;
+}
+/*components*/
+.overlay-padding{
 	padding-top: 25px;
 }
 .uppercase {
@@ -46,7 +60,7 @@ body {
 }
 .overlay {
 	height: 100%;
-	width: 33.33%;
+	width: 300px;
 	background-color: #1A1818;
 	opacity: 0.8;
 }
