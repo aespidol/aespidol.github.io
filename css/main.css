@@ -5,7 +5,7 @@
 	}
 }
 * {
-	/*outline: 1px red dotted !important;*/
+	outline: 1px red dotted !important;
 	margin: 0;
 }
 body {
@@ -39,6 +39,9 @@ p {
 .wet-asphalt-background {
 	background-color: #2C3E50;
 }
+.turquoise-background {
+	background-color: #1abc9c;
+}
 /*components*/
 .overlay-padding{
 	padding-top: 25px;
@@ -50,6 +53,11 @@ p {
 	max-width: 900px;
 	height: 100%;
 	margin: auto;
+	display: flex;
+}
+.img-tile {
+	height: 200px;
+	width: 33.33%;
 }
 .header-responsive {
 	width: 100%;
@@ -79,6 +87,7 @@ p {
 }
 .col-4 {
 	width: 33.33%;
+	height: 200px;
 }
 .col-5 {
 	width: 41.66%;
