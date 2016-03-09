@@ -52,7 +52,7 @@ p {
 }
 
 .bg-primary {
-    background-color: rgba(52, 73, 94,1.0);
+    background-color: #f05f40;
 }
 
 .bg-dark {
@@ -274,7 +274,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(52, 73, 94,.9);
+    background: rgba(240,95,64,.9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -473,4 +473,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+.img-container{
+    width: 450px;
+    margin: 0 auto;
 }
