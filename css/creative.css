@@ -476,6 +476,12 @@ body {
 }
 
 .img-container{
-    width: 450px;
+    max-width: 450px;
     margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+    .img-container {
+        max-width: 300px;
+    }
 }
