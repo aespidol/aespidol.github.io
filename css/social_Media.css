@@ -18,7 +18,7 @@
     width: 40px;
     height: 40px;
     color: #FFF;
-    background-color: #909AA0;
+    background-color: #F86520;
     font-size: 22px;
     text-align:center;
     padding-top: 12px;
@@ -34,7 +34,7 @@
 }
 
 .social i:hover {
-    color: #FFF;
+    color: #F86520;
     text-decoration: none;
     transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
@@ -44,11 +44,11 @@
 }
 
 .social .fa-facebook:hover {
-    background: #F86520;
+    background: #ffffff;
 }
 
 .social .fa-twitter:hover {
-    background: #F86520;
+    background: #ffffff;
 }
 
 .social .fa-google-plus:hover {
@@ -64,7 +64,7 @@
 }
 
 .social .fa-linkedin:hover {
-    background: #F86520;
+    background: #ffffff;
 }
 
 .social .fa-flickr:hover {
