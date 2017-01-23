@@ -14,6 +14,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/flipclock.css"> -->
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -28,7 +29,7 @@
 
     <!--Social Media CSS-->
     <link href="css/social_Media.css" rel="stylesheet">
-
+    <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -86,7 +87,6 @@
                 <div class="img-container">
                     <img src="img/launchable_logos/Site_Logo_Correct_Orange.png" alt="logo" class="img-responsive">
                 </div>
-                <hr>
                 <div class="social">
 				    <ul>
 				        <li><a target="_blank" href="https://www.facebook.com/teamlaunchable/"><i class="fa fa-lg fa-facebook"></i></a></li>
@@ -101,15 +101,9 @@
 
 
 
-
-
-
-
        
 
 
-
-<section id="alice">
                  <section id="video-landing">
 
                  <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
@@ -117,7 +111,6 @@
                                                 <h1 class="fh5co-lead to-animate"><b>Hello</b> Alice<br></h1>
                                                 <p class="fh5co-sub to-animate"><br><b>Say hello to your new teacher and friend Alice. <br></b> </p>
                                                 <div class="col-md-4 col-md-offset-4">
-                            <label></label>
                             <a href="https://madebylaunchable.com"> <button type="Send"  value="http://madebylaunchable.com" class="btn btn-primary btn-block btn-lg"> 
                             Learn More </button></a>
                         </div>
@@ -130,8 +123,40 @@
   </video>
 </section><!-- #section -->
 
-</section>
 
+
+
+
+            <div class="row" id="fh5co-products">
+                <div class="col-lg-6 col-lg-offset-3 text-center">
+                <h1 class="fh5co-lead to-animate"><b>Launch</b> Cards<br></h1>
+                   <hr class="primary">
+<p> The wait is almost over, Launch Cards will be releasing on the 31st for free on the Apple App Store.</p>
+
+</div>
+  <div class="countsy">
+ <div id="countdown">
+      <div class="cd-box">
+        <p class="numbers days">00</p><br>
+        <p class="strings timeRefDays">Days</p>
+      </div>
+      <div class="cd-box">
+        <p class="numbers hours">00</p><br>
+        <p class="strings timeRefHours">Hours</p>
+      </div>
+      <div class="cd-box">
+        <p class="numbers minutes">00</p><br>
+        <p class="strings timeRefMinutes">Minutes</p>
+      </div>
+      <div class="cd-box">
+        <p class="numbers seconds">00</p><br>
+        <p class="strings timeRefSeconds">Seconds</p>
+      </div>
+    </div><!-- end div#countdown -->
+    
+
+</div>
+</div>
 
 
 
@@ -157,14 +182,14 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-apple wow bounceIn text-primary"></i>
                         <h3>iOS / Android</h3>
-                        <p class="text-muted">Create you're mobile app for your iPhone or Android devices.</p>
+                        <p class="text-muted">Create your mobile app for your iPhone or Android devices.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-mobile wow bounceIn text-primary" data-wow-delay=".3s"></i>
                         <h3>Prototyping</h3>
-                        <p class="text-muted">Design and implement a quality demo of your app.</p>
+                        <p class="text-muted">Design and implement a quality demo of your appplication.</p>
                     </div>
                 </div>
 				<div class="col-lg-3 col-md-6 text-center">
@@ -247,8 +272,14 @@
                 </div>
                 </section>
 
-    <section id="contact">
-        <div class="container">
+
+
+
+
+
+   
+        <div class="container"> 
+        <section id="contact">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
@@ -263,15 +294,15 @@
             <div class="col-lg-6 col-sm-7 wow fadeInLeft">
                 <div class="contact-info-box address clearfix">
                     <h3><i class=" icon-map-marker"></i>Address:</h3>
-                    <br> 101 S Garland Ave #108<br>Orlando, FL 32801
+                    <br> <div class="grr">101 S Garland Ave #108<br>Orlando, FL 32801</div>
                 </div>
                 <div class="contact-info-box phone clearfix">
                     <h3><i class="fa-phone"></i>Phone:</h3>
-                    <br>407-906-3034
+                    <br><div class="grr">407-906-3034</div>
                 </div>
                 <div class="contact-info-box email clearfix">
                     <h3><i class="fa-pencil"></i>email:</h3>
-                    <br>hello@teamlaunchable.com
+                    <br><div class="grr">hello@teamlaunchable.com</div>
                 </div>
                 
               
@@ -329,15 +360,36 @@
         </div>
 
  </div>
+</section>
 </div>
-    </section>
+    
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/flipclock.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/GetTime.js"></script>
    <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+    <script src="http://dimension.su/scripts/flip-countdown/js/jquery-1.11.2.min.js"></script>
+    <script src="http://dimension.su/scripts/flip-countdown/js/flipclock.min.js"></script>
+    <script src="http://dimension.su/scripts/flip-countdown/js/jquery.cookie.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -348,7 +400,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
-
+    <script src="js/countdown.js"></script>
     <script src="js/Contact_Form.js"></script>
 
 
