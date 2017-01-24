@@ -51,6 +51,7 @@ p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
+    text-align: center;
 }
 
 .bg-primary {
@@ -1902,6 +1903,16 @@ div.cd-box{
 
 
 @media screen and (max-width: 768px) {
+
+#video-landing {
+  margin: 0 0 -150px 0;
+}
+
+#video-landing h1 {
+  margin: 0 auto;
+
+ }
+
   div.countsy{
 width: 100%;
 clear: both;
