@@ -14,7 +14,7 @@ html(lang='en')
     // Custom Fonts
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css', type='text/css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', type='text/css')
     // Plugin CSS
     link(rel='stylesheet', href='css/animate.min.css', type='text/css')
     // Custom CSS
@@ -68,7 +68,8 @@ html(lang='en')
                         | Learn More
     section#video-landing
       #alice.col-md-8.col-md-offset-2.fh5co-section-heading.text-center
-        h1.fh5co-lead.to-animate
+        img.img-responsive.middle.alicelogo(src="./img/alice.png" alt="alice logo")
+        h1.fh5co-lead.to-animate.alicegif
           b Hello
           |  Alice
           br
@@ -79,78 +80,17 @@ html(lang='en')
             br
         .col-md-4.col-md-offset-4
           label
-          a(href='https://helloalice.org')
+          a.alicegif(href='https://helloalice.org')
             button.btn.btn-primary.btn-block.btn-lg(type='Send')
               | Learn More
-      video#bgvid(autoplay='autoplay', loop='loop')
+      video#bgvid.alicegif(autoplay='autoplay', loop='loop')
         source(src='https://s3.amazonaws.com/launchable/Alice+blur.mp4', type='video/mp4')
-    // #section
-    section#services
-      .container
-        .row
-          .col-lg-12.text-center
-            h1.section-heading Our Services
-            hr.primary
-      .container
-        .row
-          .col-lg-3.col-md-6.text-center
-            .service-box
-              i.fa.fa-4x.fa-apple.wow.bounceIn.text-primary
-              h3 iOS / Android
-              p.text-muted Create your mobile app for your iPhone or Android devices.
-          .col-lg-3.col-md-6.text-center
-            .service-box
-              i.fa.fa-4x.fa-mobile.wow.bounceIn.text-primary(data-wow-delay='.3s')
-              h3 Prototyping
-              p.text-muted Design and implement a quality demo of your appplication.
-          .col-lg-3.col-md-6.text-center
-            .service-box
-              i.fa.fa-4x.fa-cube.wow.bounceIn.text-primary(data-wow-delay='.2s')
-              h3 Augmented Reality
-              p.text-muted 3D digital art placed into the user's view of the real world.
-          .col-lg-3.col-md-6.text-center
-            .service-box
-              i.fa.fa-4x.fa-desktop.wow.bounceIn.text-primary(data-wow-delay='.1s')
-              h3 Web Portals
-              p.text-muted Companies internal software to make jobs easier or handle a task.
-    section#clients
-      #fh5co-products(data-section='products')
-        .container
-          .row
-            .col-md-8.col-md-offset-2.fh5co-section-heading.text-center
-              h2.fh5co-lead.animate-single.product-animate-1 OUR AWESOME CLIENTS
-            .col-md-3.col-sm-6.col-xs-6.col-xxs-12
-              a.fh5co-figure.to-animate.image-popup(href='http://drinksforpals.com')
-                figure
-                  img.img-responsive(src='img/product_1.jpg', alt='Free HTML5 Responsive Template')
-                h3.fh5co-figure-lead PALS
-                p.fh5co-figure-text Buy your pal a drink without being there!
-            .col-md-3.col-sm-6.col-xs-6.col-xxs-12
-              a.fh5co-figure.to-animate.image-popup(href='https://www.myloopapp.com')
-                figure
-                  img.img-responsive(src='img/product_2.jpg', alt='Free HTML5 Responsive Template')
-                h3.fh5co-figure-lead myLoop
-                p.fh5co-figure-text Your personalized professional network
-            .clearfix.visible-sm-block
-            .col-md-3.col-sm-6.col-xs-6.col-xxs-12
-              a.fh5co-figure.to-animate.image-popup(href='#')
-                figure
-                  img.img-responsive(src='img/product_3.jpg', alt='Free HTML5 Responsive Template')
-                h3.fh5co-figure-lead UPmosphere
-                p.fh5co-figure-text A content driven network
-            .col-md-3.col-sm-6.col-xs-6.col-xxs-12
-              a.fh5co-figure.to-animate.image-popup(href='http://helloalice.org')
-                figure
-                  img.img-responsive(src='img/product_4.jpg', alt='Free HTML5 Responsive Template')
-                h3.fh5co-figure-lead Hello Alice
-                p.fh5co-figure-text Augmented Education
-            .clearfix.visible-sm-block
-            .fh5co-spacer.fh5co-spacer-sm
+
     .container
       section#contact
         .row
           .col-lg-8.col-lg-offset-2.text-center
-            h2.section-heading Let's Get In Touch!
+            h2.section-heading(style="margin-top: 70px;") Let's Get In Touch!
             hr.primary
             p
               br
@@ -159,22 +99,22 @@ html(lang='en')
             .col-lg-6.col-sm-7.wow.fadeInLeft
               .contact-info-box.address.clearfix
                 h3
-                  i.icon-map-marker
+                  i.fa.fa-map-marker
                   | Address:
                 br
                 .grr
-                  | 101 S Garland Ave #108
+                  | 225 E Robinson St #660
                   br
                   | Orlando, FL 32801
               .contact-info-box.phone.clearfix
                 h3
-                  i.fa-phone
+                  i.fa.fa-phone
                   | Phone:
                 br
                 .grr 407-906-3034
               .contact-info-box.email.clearfix
                 h3
-                  i.fa-pencil
+                  i.fa.fa-envelope
                   | email:
                 br
                 .grr hello@teamlaunchable.com
@@ -202,14 +142,14 @@ html(lang='en')
                   .row
                     .col-lg-8.col-lg-offset-2.text-center
                       button.btn.btn-primary.btn-xl(type='submit') Send
-    script(src='js/flipclock.js')
-    script(src='js/jquery.min.js')
-    script(src='js/GetTime.js')
+    //- script(src='js/flipclock.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    //- script(src='js/GetTime.js')
     // jQuery
-    script(src='js/jquery.js')
-    script(src='http://dimension.su/scripts/flip-countdown/js/jquery-1.11.2.min.js')
-    script(src='http://dimension.su/scripts/flip-countdown/js/flipclock.min.js')
-    script(src='http://dimension.su/scripts/flip-countdown/js/jquery.cookie.js')
+    //- script(src='js/jquery.js')
+    //- script(src='http://dimension.su/scripts/flip-countdown/js/jquery-1.11.2.min.js')
+    //- script(src='http://dimension.su/scripts/flip-countdown/js/flipclock.min.js')
+    //- script(src='http://dimension.su/scripts/flip-countdown/js/jquery.cookie.js')
     // Bootstrap Core JavaScript
     script(src='js/bootstrap.min.js')
     // Plugin JavaScript
@@ -218,5 +158,5 @@ html(lang='en')
     script(src='js/wow.min.js')
     // Custom Theme JavaScript
     script(src='js/creative.js')
-    script(src='js/countdown.js')
+    //- script(src='js/countdown.js')
     script(src='js/Contact_Form.js')

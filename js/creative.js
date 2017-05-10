@@ -45,4 +45,10 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
+    $('.alicegif').hide();
+    $('.alicelogo').hover(function(){
+        $('.alicelogo').hide(function(){
+            $('.alicegif').show();
+        })
+    });
 })(jQuery); // End of use strict

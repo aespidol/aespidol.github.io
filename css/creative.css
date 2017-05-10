@@ -181,7 +181,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(img/header.jpg);
+    /*background-image: url(../img/header.jpg);*/
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1546,7 +1546,6 @@ img{
   font-style:normal;
   font-size:18px;
   color:#222222;
-  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
   font-weight:normal;
   margin-right:7px;
 }
@@ -1709,7 +1708,7 @@ img{
   font-style:normal;
   font-size:18px;
   color:#222222;    
-  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-family: FontAwesome;
   font-weight:normal;
   margin-right:7px;
 }
