@@ -1,0 +1,253 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='keywords', content='orlando, AR, Augmented Reality, Launch Cards, Hello Alice, Business Cards, launchable, design, development, app development, web development, mobile app development, mobile web development, web design, responsive web design, iphone, android, ios, home')
+    meta(name='description', content='We are Launchable. We take your digital idea and turn it into a launchable product. We provide graphic design, web development and mobile app development services.')
+    meta(name='author', content='Launchable LLC.')
+    title Launchable!
+    // Bootstrap Core CSS
+    link(rel='stylesheet', href='css/bootstrap.min.css', type='text/css')
+    // <link rel="stylesheet" href="css/flipclock.css">
+    // Custom Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css', type='text/css')
+    // Plugin CSS
+    link(rel='stylesheet', href='css/animate.min.css', type='text/css')
+    // Custom CSS
+    link(rel='stylesheet', href='css/creative.css', type='text/css')
+    link(rel='stylesheet', href='css/custom.css.min', type='text/css')
+    // Social Media CSS
+    link(href='css/social_Media.css', rel='stylesheet')
+    link(type='text/css', rel='stylesheet', href='clock_assets/flipclock.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body#page-top
+    nav#mainNav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.page-scroll(href='#page-top') launchable
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a.page-scroll(href='#about') About
+            li
+              a.page-scroll(href='#alice') Alice
+            li
+              a.page-scroll(href='#launchcard') Launch Cards
+            li
+              a.page-scroll(href='#services') Services
+            li
+              a.page-scroll(href='#clients') Clients
+            li
+              a.page-scroll(href='#contact') Contact Us
+        // /.navbar-collapse
+      // /.container-fluid
+    header
+      path.a1(d='M0 0 L30 32 L60 0')
+      path.a2(d='M0 20 L30 52 L60 20')
+      path.a3(d='M0 40 L30 72 L60 40')
+      .header-content
+        .img-container
+          img.img-responsive(src='img/launchable_logos/Site_Logo_Correct_Orange.png', alt='logo')
+        .social
+          ul
+            li
+              a(target='_blank', href='https://www.facebook.com/teamlaunchable/')
+                i.fa.fa-lg.fa-facebook
+            li
+              a(target='_blank', href='https://twitter.com/teamlaunchable')
+                i.fa.fa-lg.fa-twitter
+            li
+              a(target='_blank', href='https://www.linkedin.com/company/team-launchable')
+                i.fa.fa-lg.fa-linkedin
+    #fh5co-products.row
+      #about.col-lg-6.col-lg-offset-3.text-center
+        h1.fh5co-lead.to-animate
+          | WHO 
+          b WE 
+          | ARE
+        hr.primary
+        p
+          | We are Team Launchable, a mobile app development company based in downtown Orlando that specializes in augmented reality.
+    section#video-landing
+      #alice.col-md-8.col-md-offset-2.fh5co-section-heading.text-center
+        h1.fh5co-lead.to-animate
+          b Hello
+          |  Alice
+          br
+        p.fh5co-sub.to-animate
+          br
+          b
+            | Say hello to your new teacher and friend Alice. 
+            br
+        .col-md-4.col-md-offset-4
+          label
+          a(href='https://helloalice.org')
+            button.btn.btn-primary.btn-block.btn-lg(type='Send')
+              | Learn More
+      video#bgvid(autoplay='autoplay', loop='loop')
+        source(src='https://s3.amazonaws.com/launchable/Alice+blur.mp4', type='video/mp4')
+    // #section
+    #fh5co-products.row
+      #launchcard.col-lg-6.col-lg-offset-3.text-center
+        h1.fh5co-lead.to-animate
+          b Launch
+          |  Cards
+          br
+        hr.primary
+        p
+          | The wait is over! LaunchCards is now availabe on the Apple App Store. Check out the link below to get the app for free and see how you can get your card to be the next to launch.
+        p.col-md-8.col-md-offset-2.fh5co-section-heading.text-center
+          .col-md-4.col-md-offset-4
+            a(href='https://madebylaunchable.com')
+              button.btn.btn-primary.btn-block.btn-lg(type='Send')
+                | Launch
+    section#services
+      .container
+        .row
+          .col-lg-12.text-center
+            h1.section-heading Our Services
+            hr.primary
+      .container
+        .row
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-apple.wow.bounceIn.text-primary
+              h3 iOS / Android
+              p.text-muted Create your mobile app for your iPhone or Android devices.
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-mobile.wow.bounceIn.text-primary(data-wow-delay='.3s')
+              h3 Prototyping
+              p.text-muted Design and implement a quality demo of your appplication.
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-cube.wow.bounceIn.text-primary(data-wow-delay='.2s')
+              h3 Augmented Reality
+              p.text-muted 3D digital art placed into the user's view of the real world.
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-desktop.wow.bounceIn.text-primary(data-wow-delay='.1s')
+              h3 Web Portals
+              p.text-muted Companies internal software to make jobs easier or handle a task.
+    section#clients
+      #fh5co-products(data-section='products')
+        .container
+          .row
+            .col-md-8.col-md-offset-2.fh5co-section-heading.text-center
+              h2.fh5co-lead.animate-single.product-animate-1 OUR AWESOME CLIENTS
+            .col-md-3.col-sm-6.col-xs-6.col-xxs-12
+              a.fh5co-figure.to-animate.image-popup(href='http://drinksforpals.com')
+                figure
+                  img.img-responsive(src='img/product_1.jpg', alt='Free HTML5 Responsive Template')
+                h3.fh5co-figure-lead PALS
+                p.fh5co-figure-text Buy your pal a drink without being there!
+            .col-md-3.col-sm-6.col-xs-6.col-xxs-12
+              a.fh5co-figure.to-animate.image-popup(href='https://www.myloopapp.com')
+                figure
+                  img.img-responsive(src='img/product_2.jpg', alt='Free HTML5 Responsive Template')
+                h3.fh5co-figure-lead myLoop
+                p.fh5co-figure-text Your personalized professional network
+            .clearfix.visible-sm-block
+            .col-md-3.col-sm-6.col-xs-6.col-xxs-12
+              a.fh5co-figure.to-animate.image-popup(href='#')
+                figure
+                  img.img-responsive(src='img/product_3.jpg', alt='Free HTML5 Responsive Template')
+                h3.fh5co-figure-lead UPmosphere
+                p.fh5co-figure-text A content driven network
+            .col-md-3.col-sm-6.col-xs-6.col-xxs-12
+              a.fh5co-figure.to-animate.image-popup(href='http://helloalice.org')
+                figure
+                  img.img-responsive(src='img/product_4.jpg', alt='Free HTML5 Responsive Template')
+                h3.fh5co-figure-lead Hello Alice
+                p.fh5co-figure-text Augmented Education
+            .clearfix.visible-sm-block
+            .fh5co-spacer.fh5co-spacer-sm
+    .container
+      section#contact
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            h2.section-heading Let's Get In Touch!
+            hr.primary
+            p
+              br
+          .col-lg-8.col-lg-offset-2.text-center
+          .row
+            .col-lg-6.col-sm-7.wow.fadeInLeft
+              .contact-info-box.address.clearfix
+                h3
+                  i.icon-map-marker
+                  | Address:
+                br
+                .grr
+                  | 101 S Garland Ave #108
+                  br
+                  | Orlando, FL 32801
+              .contact-info-box.phone.clearfix
+                h3
+                  i.fa-phone
+                  | Phone:
+                br
+                .grr 407-906-3034
+              .contact-info-box.email.clearfix
+                h3
+                  i.fa-pencil
+                  | email:
+                br
+                .grr hello@teamlaunchable.com
+            .col-lg-6.col-sm-5.wow.fadeInUp.delay-05s
+              .form
+                form#contactForm(action='//formspree.io/alfred@teamlaunchable.com', name='sentMessage', method='POST', novalidate='')
+                  .row.control-group
+                    .form-group.col-xs-12.floating-label-form-group.controls
+                      input#name.form-control(type='text', placeholder='Name', name='firstname', required='', data-validation-required-message='Please enter your name.')
+                      p.help-block
+                  .row.control-group
+                    .form-group.col-xs-12.floating-label-form-group.controls
+                      input#email.form-control(type='email', placeholder='Email Address', name='email', required='', data-validation-required-message='Please enter your email address.')
+                      p.help-block.text-danger
+                  .row.control-group
+                    .form-group.col-xs-12.floating-label-form-group.controls
+                      input#phone.form-control(type='tel', placeholder='Phone Number', name='phone', required='', data-validation-required-message='Please enter your phone number.')
+                      p.help-block.text-danger
+                  .row.control-group
+                    .form-group.col-xs-12.floating-label-form-group.controls
+                      textarea#message.form-control(rows='5', placeholder='Tell us a brief description about your idea...', name='message', required='', data-validation-required-message='Please enter a message.')
+                      p.help-block.text-danger
+                  br
+                  #success
+                  .row
+                    .col-lg-8.col-lg-offset-2.text-center
+                      button.btn.btn-primary.btn-xl(type='submit') Send
+    script(src='js/flipclock.js')
+    script(src='js/jquery.min.js')
+    script(src='js/GetTime.js')
+    // jQuery
+    script(src='js/jquery.js')
+    script(src='http://dimension.su/scripts/flip-countdown/js/jquery-1.11.2.min.js')
+    script(src='http://dimension.su/scripts/flip-countdown/js/flipclock.min.js')
+    script(src='http://dimension.su/scripts/flip-countdown/js/jquery.cookie.js')
+    // Bootstrap Core JavaScript
+    script(src='js/bootstrap.min.js')
+    // Plugin JavaScript
+    script(src='js/jquery.easing.min.js')
+    script(src='js/jquery.fittext.js')
+    script(src='js/wow.min.js')
+    // Custom Theme JavaScript
+    script(src='js/creative.js')
+    script(src='js/countdown.js')
+    script(src='js/Contact_Form.js')
