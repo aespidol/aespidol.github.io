@@ -18,8 +18,8 @@ var gulp = require("gulp"),
 ////////////////////////////////////////////////
 // Scripts Task
 ////////////////////////////////////////////////
-gulp.task("sass", function(){
-	gulp.src('./client/scss/**/*.scss')
+gulp.task("scss", function(){
+	gulp.src('./precompile/**/*.scss')
 		.pipe(plumber())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(rename({suffix: '.min'}))
@@ -30,10 +30,10 @@ gulp.task("sass", function(){
 });
 
 gulp.task("jade", function(){
-	gulp.src("./precompile/*.jade")
+	gulp.src("./precompile/**/*.jade")
 	.pipe(plumber())
 	.pipe(jade())
-	.pipe(gulp.dest("./client/"))
+	.pipe(gulp.dest("./"))
 	.pipe(reload({stream:true}));
 })
 
@@ -60,11 +60,11 @@ gulp.task('browser-sync', function(){
 // Watch Task
 ////////////////////////////////////////////////
 gulp.task("watch", function(){
-	gulp.watch('./client/scss/**/*.scss', ["sass"])
-	gulp.watch('./*.html', ["html"]);
+	gulp.watch('./precompile/**/*.scss', ["scss"])
+	gulp.watch('./precompile/**/*.jade', ["jade"]);
 
 })
 ////////////////////////////////////////////////
 // Default Task
 ////////////////////////////////////////////////
-gulp.task("default", ["sass","browser-sync", "watch"]);
+gulp.task("default", ["scss","browser-sync", "watch", "jade"]);
